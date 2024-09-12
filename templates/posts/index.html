@@ -1,0 +1,12 @@
+{% extends 'posts/base.html' %}
+{% load static %}
+
+{% block content %}
+<section>
+
+    {% for post_id, info in posts.items %}
+        {% include 'posts/partials/_posts.html' %}
+    {% endfor %}
+
+</section>
+{% endblock %}

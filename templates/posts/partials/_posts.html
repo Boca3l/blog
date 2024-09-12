@@ -1,0 +1,14 @@
+{% load static %}
+
+<article>
+    <p>---------------------------------------------------------------</p>
+    <h3>{{ info.title }}</h3>
+    <img src="{% static 'images/seu_madruga.webp' %}" alt=""/>
+    <p>{{ info.description }}</p>
+    <p>{{info.autor}}</p>
+    <p>Data da publicação: {{info.date}}</p>
+    <p>Tags: {% include 'posts/partials/_tags.html'%} </p>
+    <p>Comentários:</p>
+    <p> {% include 'posts/partials/_coments.html'%} </p>
+    <br>
+</article>

@@ -1,0 +1,5 @@
+{% load static %}
+
+{% for autor, coment in info.comments.items %}
+    <p>{{ autor }}:<br> {{ coment }}</p>
+{% endfor %}
